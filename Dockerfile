@@ -54,6 +54,17 @@ RUN echo "" >> /home/builder/.bashrc
 RUN apt-get install -y vim
 ADD tools/vimrc /home/builder/.vimrc
 
+#set umask 0022
+RUN echo "umask 0022" >> /home/builder/.bashrc
+RUN echo "" >> /home/builder/.bashrc
+
+#set locale 
+RUN locale-gen zh_CN.UTF-8
+RUN locale-gen en_US.UTF-8
+RUN echo 'export LC_ALL="en_US.UTF-8"' >> /home/builder/.bashrc
+RUN echo 'export LANG="en_US.UTF-8"' >> /home/builder/.bashrc
+RUN echo "" >> /home/builder/.bashrc
+
 # android source volume
 USER builder
 WORKDIR /home/builder
