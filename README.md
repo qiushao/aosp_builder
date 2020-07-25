@@ -1,2 +1,2 @@
 
-使用方法详见 https://qiushao.github.io/2019/01/14/android/system-dev/docker-build-android/
+使用方法详见 http://qiushao.net/2019/11/14/Linux/docker-aosp-build-env/
