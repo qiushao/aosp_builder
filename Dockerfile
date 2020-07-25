@@ -44,6 +44,7 @@ RUN apt-get install -y git-core gnupg bison flex gperf pngcrush bc zip curl lzop
 RUN apt-get install -y schedtool libxml2 libxml2-utils xsltproc squashfs-tools
 RUN apt-get install -y libesd0-dev libsdl1.2-dev libwxgtk2.8-dev libswitch-perl
 RUN apt-get install -y libssl1.0.0 libssl-dev lib32readline-gplv2-dev libncurses5-dev
+RUN apt-get install -y mtd-utils uuid-dev texinfo u-boot-tools
 
 # use ccache
 RUN apt-get install -y ccache
